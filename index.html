@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#3B1F0E">
+<title>Cocoa &amp; Creme Rooftop Cafe | Vegetarian Rooftop Dining in Adyar, Chennai</title>
+<meta name="description" content="Visit Cocoa &amp; Creme Rooftop Cafe in Adyar, Chennai — a top-rated vegetarian rooftop cafe offering fresh pizzas, pastas, hot chocolates, and custom cakes. Rated 4.4★ by 695+ guests. Open daily from 4 PM. Book your table or order a cake via WhatsApp!">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1c1007;background:#fdfaf5;-webkit-font-smoothing:antialiased}
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}.wa-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.6)}
+[data-r]{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
+[data-r].r-in{opacity:1;transform:none;}
+[data-r][data-d="1"]{transition-delay:.1s;}[data-r][data-d="2"]{transition-delay:.22s;}
+[data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
+[data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
+.nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(253,250,245,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,0,0,.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:62px;transition:box-shadow .3s}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:#3B1F0E}
+.nav-cta{background:#C0622F;color:#fff;padding:9px 22px;border-radius:50px;text-decoration:none;font-size:.83rem;font-weight:600;transition:opacity .2s}
+.nav-cta:hover{opacity:.88}
+/* HERO */
+.hero{position:relative;height:100svh;min-height:580px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:-15%;width:130%;height:130%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3kx4YoRKVK0e-OMccmGe_TUq8XLy-kzl_8CPPe3Q2neqt7sDm2haW7fPQK-DYRL1fC23XSYI3KQcdvEOwvCNV6or-h3Enbuna-9ahRkjfhyyWhlrYN7kRvVwrwr_cnfmvYsihoxQi484dywiH1suJ9t3X1q6hH1NFz5UzgLq0Xkae-EMaT0P5nVaoniUs0BJeftHdwo5RVjysLcCko1vOvUeWoqg-hpq8YoRAVi95XkMQKC35JPU7NgcL2Z3yn-9Qe78u4GYtRnlzJiooBGLOFvqI1rU96V0skusppGyEq9COpky78yn_RrLIoxQ1lK2e8ah8cXzejzQmQbcA4Y0Trhd8k9IYG3uzr8TNIh9McL-Bse1PbJAM3iDNWJcgIhclSeOLPNQ22LLIRYY03MA7NSTAKPxe1UOoevqdiojz5qQg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center top;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,6,0,.9) 0%,rgba(12,6,0,.3) 55%,transparent 100%)}
+.hero-content{position:relative;z-index:2;padding:0 5vw 56px;color:#fff;width:100%}
+.hero-tag{display:inline-flex;gap:6px;align-items:center;background:#C0622F;padding:6px 16px;border-radius:50px;font-size:.76rem;font-weight:600;margin-bottom:18px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6.5vw,4rem);line-height:1.1;margin-bottom:14px;letter-spacing:-.02em}
+.hero p{font-size:clamp(.92rem,2vw,1.08rem);opacity:.84;margin-bottom:30px;max-width:500px;line-height:1.68}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-amber{background:#C0622F;color:#fff;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.93rem;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .15s}
+.btn-amber:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-size:.93rem;transition:background .2s}
+.btn-outline:hover{background:rgba(255,255,255,.1)}
+/* INFO STRIP */
+.info-strip{background:#3B1F0E;color:rgba(255,255,255,.9);display:flex;flex-wrap:wrap;justify-content:center;gap:0}
+.info-item{padding:14px 22px;display:flex;align-items:center;gap:8px;font-size:.86rem;border-right:1px solid rgba(255,255,255,.12)}
+.info-item:last-child{border:none}
+/* STORY */
+section{padding:68px 5vw}
+.container{max-width:980px;margin:0 auto}
+.sec-label{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#C0622F;margin-bottom:10px;font-weight:600}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.3rem);color:#3B1F0E;margin-bottom:16px;letter-spacing:-.01em}
+.story-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media(min-width:768px){.story-grid{grid-template-columns:1fr 1fr}}
+.story-img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.story-text p{color:#5a4a30;line-height:1.88;margin-bottom:14px;font-size:.94rem}
+.hl-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.hl-pill{background:#fdf0dc;color:#3B1F0E;border:1px solid #f0d8a0;padding:7px 16px;border-radius:50px;font-size:.82rem;font-weight:500}
+/* MENU */
+.menu-bg{background:#fff}
+.menu-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+@media(min-width:480px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-card{border:1px solid #ede8da;border-radius:14px;padding:24px;position:relative;overflow:hidden;transition:transform .22s,box-shadow .22s;background:#fdfcf8}
+.menu-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.08)}
+.menu-card:before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,#3B1F0E,#C0622F)}
+.menu-icon{font-size:1.5rem;margin-bottom:12px;display:block}
+.menu-card h3{font-family:'Playfair Display',serif;color:#3B1F0E;font-size:1.05rem;margin-bottom:8px}
+.menu-card p{color:#7a6040;font-size:.86rem;line-height:1.65}
+/* PARALLAX STRIP */
+.ps-wrap{position:relative;min-height:320px;display:flex;align-items:center;overflow:hidden}
+#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3n0ayahueVio2DlNHGOPJOZ8GBmQjYSJz7oupTrgcfO_t9JJ-CYCtgT85aiNKWOCcMpwljl4EnjFSLO_SHltXZKJUlVq793Zjhl4cj4TviuF-sn9pkwObhXjTQcUoS8DD_CNOhHzzSJeDpdEHYfMg8oLJvijUDGZDxmxoWCWxqUnv8_p-aX6y3ZdPo-Qa-zqsOOaSD8WgDqClqzQlB9QgI7wNBKx5F2FOCRQmzeMxWqkJ98dtCwIwzqorR1N-t0uVipWHLvYPeNZUdeNT24RkkxcTnlS0sYlYG_Log9pKwZB5HeqUnWM9xMk8SMPGGnXGB2QDiA5YBKFfuXwGmjJbCeWMSCC2RK5gPd-asdlj51sIe_kXpvrA9SlN9O3_eRlVt_jjCVGkoYKVxK6g3UlHCQ6a2n0N9Z8Z3KNXYlz8xokjSl&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center;will-change:transform}
+.ps-overlay{position:absolute;inset:0;background:linear-gradient(90deg,#3B1F0Ef2 0%,#3B1F0E99 60%,transparent 100%)}
+.ps-content{position:relative;z-index:2;padding:52px 5vw;color:#fff;max-width:520px}
+.ps-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:14px}
+.ps-content p{opacity:.82;margin-bottom:26px;font-size:.95rem;line-height:1.68}
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;transition:transform .3s,opacity .3s}
+.gallery-grid img:hover{transform:scale(1.03);opacity:.9}
+/* REVIEWS */
+.reviews-bg{background:#3B1F0E}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:36px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.1);border-radius:14px;padding:24px;backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.1)}
+.rv-stars{color:#fbbf24;margin-bottom:10px;font-size:1rem;letter-spacing:2px}
+.rv-text{color:rgba(255,255,255,.8);font-size:.9rem;line-height:1.75;font-style:italic;margin-bottom:12px}
+.rv-author{color:rgba(255,255,255,.48);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+/* CTA */
+.cta-section{background:#C0622F;color:#fff;text-align:center;padding:64px 5vw}
+.cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.cta-btn-w{background:#fff;color:#C0622F;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700}
+.cta-btn-o{border:2px solid rgba(255,255,255,.55);color:#fff;padding:13px 28px;border-radius:8px;text-decoration:none}
+footer{background:#0a0600;color:#7a6040;text-align:center;padding:26px;font-size:.8rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">Cocoa &amp; Creme Rooftop Cafe</span>
+  <a href="https://wa.me/919840223428?text=Hi!%20I%20found%20Cocoa%20%26%20Creme%20Rooftop%20Cafe%20online%20and%20I'd%20love%20to%20know%20more%20about%20your%20menu%2C%20availability%2C%20or%20place%20an%20order.%20Could%20you%20please%20help%20me%3F" class="nav-cta">Order Now</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">⭐ 4.4/5 · Google Rated</div>
+    <h1>Sky-High Flavors, Ground-Level Comfort</h1>
+    <p>Chennai's favorite vegetarian rooftop café in the heart of Adyar — where great food meets a breezy open sky.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919840223428?text=Hi!%20I%20found%20Cocoa%20%26%20Creme%20Rooftop%20Cafe%20online%20and%20I'd%20love%20to%20know%20more%20about%20your%20menu%2C%20availability%2C%20or%20place%20an%20order.%20Could%20you%20please%20help%20me%3F" class="btn-amber">Reserve Your Rooftop Table Today</a>
+      <a href="tel:098402 23428" class="btn-outline">📞 Reserve a Table</a>
+    </div>
+  </div>
+</div>
+
+<div class="info-strip" data-r>
+  <div class="info-item">📞 098402 23428</div>
+  <div class="info-item">📍 4th Floor, No. 53/26, 1st Main Road, above Mathsya, Gandhi Nagar, Adyar, Chennai, Tamil Nadu 600020, India</div>
+  <div class="info-item">🕐 Monday: 4:00 – 11:00 PM | Tuesday: 4:00 – 11:00 PM | Wednesday: 4:00 – 11:00 PM | Thursday: 4:00 – 11:00 PM | Friday: 4:00 – 11:00 PM | Saturday: 12:00 PM – 12:00 AM | Sunday: 12:00 PM – 12:00 AM</div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="story-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3kx4YoRKVK0e-OMccmGe_TUq8XLy-kzl_8CPPe3Q2neqt7sDm2haW7fPQK-DYRL1fC23XSYI3KQcdvEOwvCNV6or-h3Enbuna-9ahRkjfhyyWhlrYN7kRvVwrwr_cnfmvYsihoxQi484dywiH1suJ9t3X1q6hH1NFz5UzgLq0Xkae-EMaT0P5nVaoniUs0BJeftHdwo5RVjysLcCko1vOvUeWoqg-hpq8YoRAVi95XkMQKC35JPU7NgcL2Z3yn-9Qe78u4GYtRnlzJiooBGLOFvqI1rU96V0skusppGyEq9COpky78yn_RrLIoxQ1lK2e8ah8cXzejzQmQbcA4Y0Trhd8k9IYG3uzr8TNIh9McL-Bse1PbJAM3iDNWJcgIhclSeOLPNQ22LLIRYY03MA7NSTAKPxe1UOoevqdiojz5qQg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Cocoa &amp; Creme Rooftop Cafe" class="story-img" loading="lazy" onerror="this.src='https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3kx4YoRKVK0e-OMccmGe_TUq8XLy-kzl_8CPPe3Q2neqt7sDm2haW7fPQK-DYRL1fC23XSYI3KQcdvEOwvCNV6or-h3Enbuna-9ahRkjfhyyWhlrYN7kRvVwrwr_cnfmvYsihoxQi484dywiH1suJ9t3X1q6hH1NFz5UzgLq0Xkae-EMaT0P5nVaoniUs0BJeftHdwo5RVjysLcCko1vOvUeWoqg-hpq8YoRAVi95XkMQKC35JPU7NgcL2Z3yn-9Qe78u4GYtRnlzJiooBGLOFvqI1rU96V0skusppGyEq9COpky78yn_RrLIoxQ1lK2e8ah8cXzejzQmQbcA4Y0Trhd8k9IYG3uzr8TNIh9McL-Bse1PbJAM3iDNWJcgIhclSeOLPNQ22LLIRYY03MA7NSTAKPxe1UOoevqdiojz5qQg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs'" data-r>
+      <div data-r data-d="2">
+        <p class="sec-label">Our Story</p>
+        <h2>Made with Passion</h2>
+        <p class="story-text">Cocoa &amp; Creme Rooftop Café is a beloved vegetarian dining destination perched on the 4th floor above Gandhi Nagar, Adyar, Chennai. With a warm and elegant ambience, gentle breezes, and soft lighting, our rooftop space offers the perfect escape for families, friends, and food lovers looking for a memorable dining experience. From handcrafted pizzas and pastas to indulgent hot chocolates and custom celebration cakes, every dish is prepared fresh with love and care.</p><p class="story-text">Rated 4.4 stars by over 695 happy guests, Cocoa &amp; Creme is more than just a café — it's a celebration of good food, great company, and exceptional hospitality. Our friendly and attentive staff go above and beyond to make every visit special, whether it's a casual evening out or a milestone birthday celebration. Open late on weekends and conveniently reachable on WhatsApp, we make it easy for you to plan your perfect rooftop experience.</p>
+        <div class="hl-pills"><span class="hl-pill">100% Vegetarian menu with a wide variety of freshly prepared dishes</span><span class="hl-pill">Stunning rooftop ambience with open breeze and elegant lighting in the heart of Adyar</span><span class="hl-pill">Highly rated at 4.4★ across 695+ reviews with exceptional and friendly staff</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu-bg">
+  <div class="container">
+    <div data-r><p class="sec-label">Menu</p><h2>What We Serve</h2></div>
+    <div class="menu-grid">
+      <div class="menu-card" data-r data-d="1"><span class="menu-icon">🍽️</span><h3>Rooftop Dining</h3><p>Enjoy a relaxed open-air dining experience with panoramic views, ambient lighting, and a soothing atmosphere perfect for any occasion.</p></div><div class="menu-card" data-r data-d="2"><span class="menu-icon">🥘</span><h3>Pizzas &amp; Pastas</h3><p>Freshly made vegetarian pizzas and pastas crafted with quality ingredients and bursting with flavor.</p></div><div class="menu-card" data-r data-d="3"><span class="menu-icon">🍜</span><h3>Signature Hot Chocolate</h3><p>Our house-special hot chocolate is a crowd favorite — rich, creamy, and the perfect companion for a breezy Adyar evening.</p></div><div class="menu-card" data-r data-d="1"><span class="menu-icon">🥗</span><h3>Snacks &amp; Sides</h3><p>From crispy fries to gourmet sandwiches, our snack menu is designed to satisfy every craving.</p></div><div class="menu-card" data-r data-d="2"><span class="menu-icon">🍰</span><h3>Custom Celebration Cakes</h3><p>Order bespoke cakes for birthdays and special occasions — soft, fresh, and beautifully crafted. Easily order via WhatsApp.</p></div><div class="menu-card" data-r data-d="3"><span class="menu-icon">☕</span><h3>Private Event Hosting</h3><p>Planning a family celebration or get-together? Our rooftop space sets the perfect backdrop for intimate gatherings and special events.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="ps-wrap" data-r>
+  <div id="ps"></div>
+  <div class="ps-overlay"></div>
+  <div class="ps-content">
+    <p class="sec-label" style="color:rgba(255,255,255,.6)">Visit Us</p>
+    <h2>Dine With Us Today</h2>
+    <p>4th Floor, No. 53/26, 1st Main Road, above Mathsya, Gandhi Nagar, Adyar, Chennai, Tamil Nadu 600020, India · Monday: 4:00 – 11:00 PM | Tuesday: 4:00 – 11:00 PM | Wednesday: 4:00 – 11:00 PM | Thursday: 4:00 – 11:00 PM | Friday: 4:00 – 11:00 PM | Saturday: 12:00 PM – 12:00 AM | Sunday: 12:00 PM – 12:00 AM</p>
+    <a href="https://wa.me/919840223428?text=Hi!%20I%20found%20Cocoa%20%26%20Creme%20Rooftop%20Cafe%20online%20and%20I'd%20love%20to%20know%20more%20about%20your%20menu%2C%20availability%2C%20or%20place%20an%20order.%20Could%20you%20please%20help%20me%3F" style="background:#C0622F;color:#fff;padding:13px 30px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block">💬 WhatsApp to Reserve</a>
+  </div>
+</div>
+
+<section><div class="container"><div data-r><p class="sec-label">Gallery</p><h2>A Peek Inside</h2></div><div class="gallery-grid" style="margin-top:28px"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3kx4YoRKVK0e-OMccmGe_TUq8XLy-kzl_8CPPe3Q2neqt7sDm2haW7fPQK-DYRL1fC23XSYI3KQcdvEOwvCNV6or-h3Enbuna-9ahRkjfhyyWhlrYN7kRvVwrwr_cnfmvYsihoxQi484dywiH1suJ9t3X1q6hH1NFz5UzgLq0Xkae-EMaT0P5nVaoniUs0BJeftHdwo5RVjysLcCko1vOvUeWoqg-hpq8YoRAVi95XkMQKC35JPU7NgcL2Z3yn-9Qe78u4GYtRnlzJiooBGLOFvqI1rU96V0skusppGyEq9COpky78yn_RrLIoxQ1lK2e8ah8cXzejzQmQbcA4Y0Trhd8k9IYG3uzr8TNIh9McL-Bse1PbJAM3iDNWJcgIhclSeOLPNQ22LLIRYY03MA7NSTAKPxe1UOoevqdiojz5qQg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Cocoa &amp; Creme Rooftop Cafe" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3n0ayahueVio2DlNHGOPJOZ8GBmQjYSJz7oupTrgcfO_t9JJ-CYCtgT85aiNKWOCcMpwljl4EnjFSLO_SHltXZKJUlVq793Zjhl4cj4TviuF-sn9pkwObhXjTQcUoS8DD_CNOhHzzSJeDpdEHYfMg8oLJvijUDGZDxmxoWCWxqUnv8_p-aX6y3ZdPo-Qa-zqsOOaSD8WgDqClqzQlB9QgI7wNBKx5F2FOCRQmzeMxWqkJ98dtCwIwzqorR1N-t0uVipWHLvYPeNZUdeNT24RkkxcTnlS0sYlYG_Log9pKwZB5HeqUnWM9xMk8SMPGGnXGB2QDiA5YBKFfuXwGmjJbCeWMSCC2RK5gPd-asdlj51sIe_kXpvrA9SlN9O3_eRlVt_jjCVGkoYKVxK6g3UlHCQ6a2n0N9Z8Z3KNXYlz8xokjSl&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Cocoa &amp; Creme Rooftop Cafe" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mk3joLTshSmxXOLFt_e0PSYDxs12alzLTnE1_Hd2MVfGoAqltWyzXKpsh_ua43rSEYZEiV0yT9_9tYkXjH74pKehnETUfDC29Oqtb-Bast_WubqmH41dAiZVQpQNEFh8Jks_1wYoC3kCn_5XeCPjkKPWzvXe-ksCGIMyfRIlW8fUYxxVCoPxcCCW2J-Lr5VHOLccuG_uHxquRP8R_u4Nqt4oYp_XcuGOtOedPw5HrWvCHvMjKLgXbcNiqeUVMkEQlPZVJOWy_ULBWeWx8ibcb0s0gUM569ow0y6-b_Etk611-1E4y05oqbOBLxalIBK3WUVCMv5t0MN4c31QJCmAQe1Zj0r5drVGyo-uiF0SHcSKXpQj5LscU0g8o11OhpBG18URuLVu9eLA3sZOJyKpwJ_VIQfe37agF1DjLrZJzTmorBig-fyffVA-bajz85&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Cocoa &amp; Creme Rooftop Cafe" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3n2KE14TgJJ-I-9ClqaXIW6VoxD8nzg-jA0y-PImU0IolHCEUj-QDJCbWJAoPqnRmyZvRSxrFRQTZw-PTr_iuBV5ntd8QiBtWGzwrIkjHBU_8mKybNrDwKAqa2xzGIUD8H6wS1vqvFs3_2yGncuZEqvhwL8W-0rlTABcqK0TP8si8AgAtPr_urEidg7o8y5faLawi1fcHnNawgTAkSB2muylpK0Ikz8xnLca5VOXck-tKAxxY9S33jkK-co0jhgVfkUDN64BQqyjcc1c8wALJ2KsRPqLYnr2NIW1p_M6zRUEtaOoVwOrlfqquOsRdKjoHeXlVwr8V-F5k4bTG8m6Fm-3tkCKAcCmmQS9mjSeoWw1W0DKYAJy1IGOxRrVSfg8ikM7hzj_4YHhqy5nJYNw1plt-D1x9rl9_NS4RDRmtSA_5NxLQwFy5a0sUAwgXwq&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Cocoa &amp; Creme Rooftop Cafe" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3nfJNKlXiWaNuzVfDUi4om4c7qaDB8YSSU4Ahyh4_7BE56QOEBGQGIsKrBThsyVIzeRhJnmgJyw-dn49743EH8cpEY1vPTZdQNho1Zb9a5ol3WWBMJmetG_SX931bJP-MeztJP_iVpP476agQq39ZSq6vcPDWYZyHyAxW2K7ylHlFpw_ETEC2AarZSGgt-kd5Oj1c4pmfEJZxMjHirSHFZalaHfnw4cS2LHGRkJrfXBEfKeHyvzJiqvylZSWBEiF5mVm4Kyk2x0u69CBKoBWLz_JZCxiRTsF2u-KtWli9y8FtWAjqwwKzEHC08kFkEZHuhbw377RML0yKjcEa4iKnujjWpS9VJR1A75GbjssRVpM--C91k22e-pHsZNt6oydqwM4ncWws_FEwKLWhSYI2VMQqRGDrbRsx8R9PStxBY&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Cocoa &amp; Creme Rooftop Cafe" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+
+<section class="reviews-bg">
+  <div class="container">
+    <div data-r><p class="sec-label" style="color:rgba(255,255,255,.5)">Reviews</p><h2 style="color:#fff">Guest Stories</h2></div>
+    <div class="rv-grid">
+      <div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★☆</div><p class="rv-text">"This vegetarian restaurant is a true gem with a wide variety of dishes to try. We ordered their pizza, pasta, fries, and sandwich — and everything was absolutely delicious and freshly made!"</p><div class="rv-author">— Mugesh Praba</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"Vegetarian, rooftop space with decent food. That's Cocoa and Creme for you. The space is located at a prime spot in Adyar with a good ambience and excellent staff. Their signature hot chocolate is a must-try!"</p><div class="rv-author">— Vijayshree Mahesh</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"The food was absolutely delicious and the ambience was warm, elegant, and perfect for a family celebration. What truly made our visit unforgettable were the incredible servers — truly outstanding hospitality!"</p><div class="rv-author">— Parvathy K</div></div><div class="rv-card" data-r data-d="NaN"><div class="rv-stars">★★★★★</div><p class="rv-text">"We ordered a Rainbow Birthday Cake for my daughter's birthday and it was perfect! Super fresh, soft, lightly sweet, and so delicious — everyone loved it. The shop was easy to reach on WhatsApp too!"</p><div class="rv-author">— Vengateswaran Govindaraj</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-section" data-r>
+  <p class="sec-label" style="color:rgba(255,255,255,.7)">Get In Touch</p>
+  <h2>Come Taste the Difference</h2>
+  <p style="opacity:.84;max-width:440px;margin:0 auto;font-size:.94rem">4th Floor, No. 53/26, 1st Main Road, above Mathsya, Gandhi Nagar, Adyar, Chennai, Tamil Nadu 600020, India</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/919840223428?text=Hi!%20I%20found%20Cocoa%20%26%20Creme%20Rooftop%20Cafe%20online%20and%20I'd%20love%20to%20know%20more%20about%20your%20menu%2C%20availability%2C%20or%20place%20an%20order.%20Could%20you%20please%20help%20me%3F" class="cta-btn-w">💬 WhatsApp Order</a>
+    <a href="tel:098402 23428" class="cta-btn-o">📞 098402 23428</a>
+    <a href="https://maps.google.com/?cid=17216460076357615314" class="cta-btn-o">📍 Directions</a>
+  </div>
+</div>
+<footer>© 2026 Cocoa &amp; Creme Rooftop Cafe · All Rights Reserved</footer>
+<a href="https://wa.me/919840223428?text=Hi!%20I%20found%20Cocoa%20%26%20Creme%20Rooftop%20Cafe%20online%20and%20I'd%20love%20to%20know%20more%20about%20your%20menu%2C%20availability%2C%20or%20place%20an%20order.%20Could%20you%20please%20help%20me%3F" class="wa-fab" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Scroll-reveal
+(function(){
+  var els=document.querySelectorAll('[data-r]');
+  if(!els.length)return;
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('r-in');obs.unobserve(e.target);}});
+  },{threshold:0.1,rootMargin:'0px 0px -48px 0px'});
+  els.forEach(function(el){obs.observe(el);});
+})();
+// Nav shadow
+(function(){
+  var nav=document.querySelector('nav');
+  if(!nav)return;
+  window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});
+})();
+// Parallax
+if(window.innerWidth>768){
+  var hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
+  },{passive:true});
+}
+</script>
+</body></html>
